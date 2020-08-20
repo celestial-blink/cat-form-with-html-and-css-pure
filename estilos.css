@@ -64,3 +64,13 @@ body{
     bottom: -100px;
     z-index:-1;
 }
+.cat-head{
+    height: 180px;
+    width: 60%;
+    border-radius: 50%;
+    background-color: white;
+    border:10px solid #b6b6b6;
+    position: absolute;
+    top:-90px;
+    left:50px;
+}
