@@ -162,3 +162,22 @@ body{
     top: -16px;
     transform-origin: bottom;
 }
+.cat-tail{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background:radial-gradient( 30px at center, white 100%,transparent);
+    background-color: #b6b6b6;
+    background-size: 90px 90px;
+    background-repeat: round;
+    top:0;
+    border-radius: 50%;
+    left:100px;
+     -webkit-mask-image: radial-gradient(150px at 60% 30% , transparent 100%,black); 
+   /* clip-path: polygon(9% 25%, 13% 53%, 26% 72%, 48% 81%, 74% 75%, 91% 62%, 100% 35%, 97% 20%, 91% 34%, 85% 48%, 74% 58%, 56% 63%, 39% 48%, 32% 22%, 26% 9%, 14% 14%);*/
+   z-index: -1;
+}
+.cat-tail:before{
+    content: "";
+    
+}
