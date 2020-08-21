@@ -73,4 +73,92 @@ body{
     position: absolute;
     top:-90px;
     left:50px;
+    z-index: -1;
+}
+.cat-head>.eyes-right{
+    height: 60px;
+    width: 40px;
+    background-color: white;
+    border:7px solid #b6b6b6;
+    border-radius: 50%;
+    position: absolute;
+    top:20px;
+    left:30px;
+    transform: rotate(-5deg);
+}
+.cat-head>.eyes-left{
+    height: 60px;
+    width: 40px;
+    background-color: white;
+    border:7px solid #b6b6b6;
+    border-radius: 50%;
+    position: absolute;
+    top:20px;
+    right:30px;
+    transform: rotate(5deg);
+}
+.cat-head>.mustache-right{
+    width: 70px;
+    border: 5px solid #b6b6b6;
+    border-radius: 70%;
+    position: absolute;
+    top: 40%;
+    left:-30px;
+    transform: rotate(30deg);
+    box-shadow: -26px 26px 0 #b6b6b6;
+}
+.cat-head>.mustache-left{
+    width: 70px;
+    border: 5px solid #b6b6b6;
+    border-radius: 70%;
+    position: absolute;
+    top: 40%;
+    right:-30px;
+    transform: rotate(-30deg);
+    box-shadow: 26px 26px 0 #b6b6b6;
+}
+.cat-head>.ear-right{
+    width: 0px;
+    border:10px solid #b6b6b6;
+    border-width: 50px 40px 100px ;
+    border-color: transparent transparent #b6b6b6 transparent;
+    position: absolute;
+    top:-130px;
+    transform: rotate(-30deg);
+    transform-origin: bottom;
+    z-index: -2;
+}
+.cat-head>.ear-right:before{
+    content: "";
+    width: 0px;
+    border:10px solid #b6b6b6;
+    border-width: 50px 30px 100px ;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    left: -30px;
+    top: -16px;
+    transform-origin: bottom;
+}
+.cat-head>.ear-left{
+    width: 0px;
+    border:10px solid #b6b6b6;
+    border-width: 50px 40px 100px ;
+    border-color: transparent transparent #b6b6b6 transparent;
+    position: absolute;
+    top:-130px;
+    right: 0;
+    transform: rotate(30deg);
+    transform-origin: bottom;
+    z-index: -2;
+}
+.cat-head>.ear-left:before{
+    content: "";
+    width: 0px;
+    border:10px solid #b6b6b6;
+    border-width: 50px 30px 100px ;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    left: -30px;
+    top: -16px;
+    transform-origin: bottom;
 }
