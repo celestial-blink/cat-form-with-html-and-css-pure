@@ -19,6 +19,10 @@ body{
     padding: 30px;
     border-radius: 40px;
     background-color: white;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
 }
 .cat-hand{
     height: 90px;
@@ -27,7 +31,7 @@ body{
     border:10px solid #b6b6b6;
     position: absolute;
     border-radius:90% 30%;
-    right:-40px;
+    right:-50px;
 }
 .cat-hand:before{
     content: "";
@@ -177,7 +181,68 @@ body{
    /* clip-path: polygon(9% 25%, 13% 53%, 26% 72%, 48% 81%, 74% 75%, 91% 62%, 100% 35%, 97% 20%, 91% 34%, 85% 48%, 74% 58%, 56% 63%, 39% 48%, 32% 22%, 26% 9%, 14% 14%);*/
    z-index: -1;
 }
-.cat-tail:before{
-    content: "";
-    
+form>input[type="text"],input[type="password"]{
+ width: 100%;
+ height: 40px;
+ border-radius: 20px;
+ margin-bottom: 20px;
+ outline: none;
+ text-align: center;
+ border-color:#b6b6b6;
+ border-style: solid;
+ border-width: 3px;
+ color:#414eff;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ padding: 0px 15px;
+ box-sizing: border-box;
+ font-size: 16px;
+ background-color: white;
+}
+form>input[type="text"]::placeholder,input[type="password"]::placeholder{
+    text-align: center;
+    color:#b6b6b6;
+    font-size: 18px;
+}
+form>input[type="submit"]{
+    height: 30px;
+    width: 70%;
+    border-radius: 20px;
+    border:3px solid #b6b6b6;
+    background-color: transparent;
+    color:#b6b6b6;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all .5s;
+    position: relative;
+    left: 32px;
+    outline: none;
+}
+form>input[type="submit"]:hover{
+    background-color: #7e87ff;
+    color:white;
+    border-color: transparent;
+}
+form>input[type="submit"]:active{
+    transform: scale(1.1);
+}
+form>h2{
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    margin: auto;
+    left: 65px;
+    margin-bottom: 20px;
+    color:#b6b6b6;
+    text-transform: uppercase;
+}
+form>a{
+    color:#8646ff;
+    text-align: right;
+    margin-top:20px;
+    display: block;
+    text-decoration: none;
+    transition:all .5s;
+}
+form>a:active{
+    transform: scale(1.1);
 }
