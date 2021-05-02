@@ -3,8 +3,13 @@
     margin: 0;
 }
 body{
-    background-color: aliceblue;
-}
+    height: 100vh;
+    width: 100%;
+    background: #00B4DB;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(45deg, #0083B0, #00B4DB); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}    
 .wrapper{
     position: absolute;
     transform:translate(-50%,-50%);
@@ -12,13 +17,15 @@ body{
     top: 50%;
 }
 .wrapper>form{
-    border:15px solid #b6b6b6;
+    border:10px solid #0083B0   ;
     height:350px;
     width: 300px;
     box-sizing: border-box;
     padding: 30px;
     border-radius: 40px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
     /* display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +35,7 @@ body{
     height: 90px;
     width: 90px;
     background-color: #fff;
-    border:10px solid #b6b6b6;
+    border:10px solid #0083B0;
     position: absolute;
     border-radius:90% 30%;
     right:-50px;
@@ -39,7 +46,7 @@ body{
     height: 100%;
     width: 100%;
     background-color: #fff;
-    border:10px solid #b6b6b6;
+    border:10px solid #0083B0;
     border-radius:30% 90%;
     left:-290px;
     top:-10px;
@@ -48,7 +55,7 @@ body{
     height: 100px;
     width: 90px;
     background-color: white;
-    border:10px solid #b6b6b6;
+    border:10px solid #0083B0;
     position: absolute;
     border-radius: 90% 40%;
     left:20px;
@@ -61,7 +68,7 @@ body{
     height: 100px;
     width: 90px;
     background-color: white;
-    border:10px solid #b6b6b6;
+    border:10px solid #0083B0;
     position: absolute;
     border-radius: 90% 40%;
     left:100px;
@@ -73,7 +80,7 @@ body{
     width: 60%;
     border-radius: 50%;
     background-color: white;
-    border:10px solid #b6b6b6;
+    border:10px solid #0083B0;
     position: absolute;
     top:-90px;
     left:50px;
@@ -83,7 +90,7 @@ body{
     height: 60px;
     width: 40px;
     background-color: white;
-    border:7px solid #b6b6b6;
+    border:7px solid #0083B0;
     border-radius: 50%;
     position: absolute;
     top:20px;
@@ -94,7 +101,7 @@ body{
     height: 60px;
     width: 40px;
     background-color: white;
-    border:7px solid #b6b6b6;
+    border:7px solid #0083B0;
     border-radius: 50%;
     position: absolute;
     top:20px;
@@ -103,29 +110,29 @@ body{
 }
 .cat-head>.mustache-right{
     width: 70px;
-    border: 5px solid #b6b6b6;
+    border: 5px solid #0083B0;
     border-radius: 70%;
     position: absolute;
     top: 40%;
     left:-30px;
     transform: rotate(30deg);
-    box-shadow: -26px 26px 0 #b6b6b6;
+    box-shadow: -26px 26px 0 #0083B0;
 }
 .cat-head>.mustache-left{
     width: 70px;
-    border: 5px solid #b6b6b6;
+    border: 5px solid #0083B0;
     border-radius: 70%;
     position: absolute;
     top: 40%;
     right:-30px;
     transform: rotate(-30deg);
-    box-shadow: 26px 26px 0 #b6b6b6;
+    box-shadow: 26px 26px 0 #0083B0;
 }
 .cat-head>.ear-right{
     width: 0px;
-    border:10px solid #b6b6b6;
+    border:10px solid #0083B0;
     border-width: 50px 40px 100px ;
-    border-color: transparent transparent #b6b6b6 transparent;
+    border-color: transparent transparent #0083B0 transparent;
     position: absolute;
     top:-130px;
     transform: rotate(-30deg);
@@ -135,7 +142,7 @@ body{
 .cat-head>.ear-right:before{
     content: "";
     width: 0px;
-    border:10px solid #b6b6b6;
+    border:10px solid #0083B0;
     border-width: 50px 30px 100px ;
     border-color: transparent transparent white transparent;
     position: absolute;
@@ -145,9 +152,9 @@ body{
 }
 .cat-head>.ear-left{
     width: 0px;
-    border:10px solid #b6b6b6;
+    border:10px solid #0083B0;
     border-width: 50px 40px 100px ;
-    border-color: transparent transparent #b6b6b6 transparent;
+    border-color: transparent transparent #0083B0 transparent;
     position: absolute;
     top:-130px;
     right: 0;
@@ -158,7 +165,7 @@ body{
 .cat-head>.ear-left:before{
     content: "";
     width: 0px;
-    border:10px solid #b6b6b6;
+    border:10px solid #0083B0;
     border-width: 50px 30px 100px ;
     border-color: transparent transparent white transparent;
     position: absolute;
@@ -171,7 +178,7 @@ body{
     height: 300px;
     width: 300px;
     background:radial-gradient( 30px at center, white 100%,transparent);
-    background-color: #b6b6b6;
+    background-color: #0083B0;
     background-size: 90px 90px;
     background-repeat: round;
     top:0;
@@ -183,16 +190,16 @@ body{
 }
 form>input[type="text"],input[type="password"]{
  width: 100%;
- height: 40px;
- border-radius: 20px;
+ height: 50px;
+ border-radius: 10px;
  margin-bottom: 20px;
  outline: none;
  text-align: center;
- border-color:#b6b6b6;
+ border-color: #0083B0;
  border-style: solid;
  border-width: 3px;
  color:#414eff;
- font-family: Georgia, 'Times New Roman', Times, serif;
+ font-family: 'Rubik', 'Times New Roman', Times, serif;
  padding: 0px 15px;
  box-sizing: border-box;
  font-size: 16px;
@@ -200,48 +207,47 @@ form>input[type="text"],input[type="password"]{
 }
 form>input[type="text"]::placeholder,input[type="password"]::placeholder{
     text-align: center;
-    color:#b6b6b6;
+    color:#0083B0;
     font-size: 18px;
 }
 form>input[type="submit"]{
     height: 30px;
     width: 70%;
     border-radius: 20px;
-    border:3px solid #b6b6b6;
-    background-color: transparent;
-    color:#b6b6b6;
+    border:3px solid #0083B0;
+    background-color: #0083B0;
+    color:white;
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Rubik', 'Times New Roman', Times, serif;
     transition: all .5s;
     position: relative;
     left: 32px;
     outline: none;
 }
 form>input[type="submit"]:hover{
-    background-color: #7e87ff;
-    color:white;
-    border-color: transparent;
+    font-size: 21px;
 }
 form>input[type="submit"]:active{
     transform: scale(1.1);
 }
 form>h2{
-    margin-bottom: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Rubik', 'Times New Roman', Times, serif;
     position: relative;
     margin: auto;
-    left: 65px;
-    margin-bottom: 20px;
-    color:#b6b6b6;
+    font-size: 30px;
+    text-align: center;
+    color:#0083B0;
     text-transform: uppercase;
 }
 form>a{
-    color:#8646ff;
+    color:#0083B0;
     text-align: right;
     margin-top:20px;
     display: block;
     text-decoration: none;
     transition:all .5s;
+    font-family: 'Rubik',Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
 form>a:active{
     transform: scale(1.1);
